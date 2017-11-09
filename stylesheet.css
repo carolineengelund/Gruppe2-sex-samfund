@@ -1,3 +1,27 @@
 body {
     margin: 0;
 }
+
+/********************* START SIDE ************************/
+
+#start {
+    background-image: url();
+    background-size: cover;
+    width: 90vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/********************* BAGGRUND ************************/
+
+.baggrund {
+    background-image: url();
+    background-size: cover;
+    width: 90vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
