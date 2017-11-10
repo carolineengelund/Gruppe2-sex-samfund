@@ -121,3 +121,56 @@ body {
 }
 
 /********************* PETER SLUT ****************/
+
+/******************FUGL*****************/
+
+#fugl_container {
+    position: absolute;
+    margin-top: 13%;
+}
+
+.fugl_walk_ind {
+    animation-name: fugl_walk_ind_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    transform: scale(0.8)
+}
+
+@keyframes fugl_walk_ind_kf {
+    0% {
+        top: -7%;
+        right: 100%;
+    }
+    100% {
+        top: -7%;
+        right: 10%;
+    }
+}
+
+/********************* PETER SPRITE *****************/
+
+#fugl_sprite {
+    background-image: url(img/fugl_sprite01.svg);
+    width: 90vw;
+    height: 50vw;
+    background-size: 800% 300%;
+    position: relative;
+}
+
+.fugl_walkcycle {
+    animation-name: fugl_walkcycle_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    animation-fill-mode: both;
+}
+
+@keyframes fugl_walkcycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -300% 0%;
+    }
+}
