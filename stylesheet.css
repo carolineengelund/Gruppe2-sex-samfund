@@ -126,51 +126,59 @@ body {
 
 #fugl_container {
     position: absolute;
-    margin-top: 13%;
+    animation-timing-function: linear;
+
+    /* margin-top: 13%;*/
 }
 
 .fugl_walk_ind {
     animation-name: fugl_walk_ind_kf;
-    animation-duration: 5s;
+    animation-duration: 5.5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    animation-delay: 0.1s;
     transform: scale(0.8)
 }
 
 @keyframes fugl_walk_ind_kf {
     0% {
-        top: -7%;
-        right: 100%;
+        top: 2%;
+        left: -100%;
     }
+
+
     100% {
-        top: -7%;
-        right: 10%;
+        top: 2%;
+        left: 100%;
     }
 }
 
-/********************* PETER SPRITE *****************/
+
+/********************* FUGL SPRITE *****************/
 
 #fugl_sprite {
-    background-image: url(img/fugl_sprite01.svg);
-    width: 90vw;
-    height: 50vw;
-    background-size: 800% 300%;
+    background-image: url(img/fugl_asset_nu.svg);
+    width: 18vw;
+    height: 12vw;
+    background-size: 600% 100%;
     position: relative;
 }
 
 .fugl_walkcycle {
     animation-name: fugl_walkcycle_kf;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: steps(3);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
     animation-fill-mode: both;
+
 }
 
 @keyframes fugl_walkcycle_kf {
     0% {
         background-position: 0% 0%;
     }
+
     100% {
-        background-position: -300% 0%;
+        background-position: -600% 0%;
     }
 }
