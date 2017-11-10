@@ -182,3 +182,35 @@ body {
         background-position: -600% 0%;
     }
 }
+
+/****************SKY******************************/
+
+#sky {
+    width: 16%;
+    height: 12%;
+    background-image: url(img/sky_ss.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    left: 0%;
+    /*opacity .5;*/
+    background-repeat: no-repeat;
+    animation-name: sky;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes sky {
+    0% {
+        margin-left: -1000px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
