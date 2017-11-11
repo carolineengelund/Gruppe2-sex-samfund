@@ -2,7 +2,62 @@ body {
     margin: 0;
 }
 
-/********************* TITEL SIDE ************************/
+/********************* KNAPPER ************************/
+
+.peter_ind_btn {
+    margin: 10px;
+    padding: 5px;
+    margin-left: 7%;
+}
+
+.peter_vinker_btn {
+    margin: 10px;
+    padding: 5px;
+}
+
+.peter_mod_bruger_btn {
+    margin: 10px;
+    padding: 5px;
+}
+
+.mobil_op_btn {
+    margin: 10px;
+    padding: 5px;
+}
+
+.mobil_billede_btn {
+    margin: 10px;
+    padding: 5px;
+}
+
+/********************* START SIDE ************************/
+
+#start {
+    background-image: url(img/startside.png);
+    background-size: cover;
+    width: 90vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.start_knap_btn {
+    width: 25vw;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    background-color: #F4912D;
+    top: 60%;
+    left: 15%;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #202532;
+    font-size: 8vw;
+}
+
+/*
+******************** TITEL SIDE ***********************
 
 #titel {
     background-image: url();
@@ -17,10 +72,11 @@ body {
 .title_start_pos {
     display: none;
 }
+*/
 
 /********************* BAGGRUND ************************/
 
-#bagrund {
+#baggrund {
     background-image: url(img/baggrund_skolegaard.jpg);
     background-size: cover;
     width: 100%;
@@ -85,21 +141,23 @@ body {
 }
 
 .peter_vinker_cycle {
-    animation-name: peter_vinker_cycle_kf;
+    animation-name: peter_vinker_cycle;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-timing-function: steps(3);
+    animation-timing-function: steps(4);
     animation-fill-mode: both;
+    /*
     top: -7%;
     left: 0%;
+*/
 }
 
 @keyframes peter_vinker_cycle_kf {
     0% {
-        background-position: 0% -100%;
+        background-position: -100% -100%;
     }
     100% {
-        background-position: -300% -100%;
+        background-position: -100% -400%;
     }
 }
 
@@ -153,7 +211,6 @@ body {
     }
 }
 
-
 /********************* FUGL SPRITE *****************/
 
 #fugl_sprite {
@@ -163,6 +220,7 @@ body {
     background-size: 600% 100%;
     position: relative;
 }
+
 
 .fugl_walkcycle {
     animation-name: fugl_walkcycle_kf;
@@ -187,7 +245,7 @@ body {
 
 #sky {
     width: 16%;
-    height: 12%;
+    height: 16%;
     background-image: url(img/sky_ss.svg);
     background-size: 100%;
     position: absolute;
@@ -201,8 +259,6 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-timing-function: linear;
     animation-delay: 1s;
 }
 
