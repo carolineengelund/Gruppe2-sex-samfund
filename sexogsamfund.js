@@ -49,14 +49,40 @@ function peterFremad() {
     $("#peter_sprite").removeClass("peter_vinker_cycle");
     $("#peter_sprite").addClass("peter_fremad_cycle");
 
-    $("#peter_sprite").on("animationend", byTelefon);
+
+    $(".del_knap_btn").on("click", delingAfBillede);
+    $(".slet_knap_btn").on("click", SletningAfBillede);
+}
+
+
+function delingAfBillede() {
+    console.log("delingAfBillede");
+    $(".del_knap_btn").off("click", delingAfBillede);
+
+    timerKopi = setInterval(kopier, 500);
+}
+
+function kopier() {
+    console.log("kopier");
+    antalKopi++;
+    if (antalKopi <= 20) {
+        $(".del_container").clone().removeClass("del_container").addClass("del_container_kopi").appendTo("#del_scene").css({
+            "left": randomIntFromInterval(1, 90) + "%",
+            "top": randomIntFromInterval(1, 90) + "%"
+        });
+    } else {
+        clearInterval(timerKopi);
+        /* jeres nye function */
+    }
+}
+
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 
 
 
-
-//
 //
 //
 //
