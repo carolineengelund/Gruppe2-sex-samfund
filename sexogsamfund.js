@@ -51,11 +51,11 @@ function peterFremad() {
     $("#peter_sprite").removeClass("peter_vinker_cycle");
     $("#peter_sprite").addClass("peter_fremad_cycle");
 
-    $(".del_knap_btn").show();
-    $(".slet_knap_btn").show();
+    $("#del_knap_container").show();
+    $("#slet_knap_container").show();
 
     $(".del_knap_btn").on("click", delingAfBillede);
-    $(".slet_knap_btn").on("click", SletningAfBillede);
+    $(".slet_knap_btn").on("click", sletningAfBillede);
 }
 
 
@@ -84,34 +84,8 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+function sletningAfBillede() {
+    console.log("sletningAfBillede");
+    $(".slet_knap_btn").off("click", sletningAfBillede);
 
-
-
-//
-//
-//
-//var antalKopi = 0;
-//var timerKopi;
-//$(".del_btn").on("click", delBtnHandler);
-//
-//function delBtnHandler() {
-//    timerKopi = setInterval(kopier, 500);
-//}
-//
-//function kopier() {
-//    console.log("kopier");
-//    antalKopi++;
-//    if (antalKopi <= 20) {
-//        $(".box_container").clone().removeClass("box_container").addClass("box_container_kopi").appendTo("#scene").css({
-//            "left": randomIntFromInterval(1, 90) + "%",
-//            "top": randomIntFromInterval(1, 90) + "%"
-//        });
-//    } else {
-//        clearInterval(timerKopi);
-//        /* jeres nye function */
-//    }
-//}
-//
-//function randomIntFromInterval(min, max) {
-//    return Math.floor(Math.random() * (max - min + 1) + min);
-//}
+}
