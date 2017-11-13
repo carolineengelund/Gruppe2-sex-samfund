@@ -1,5 +1,7 @@
 var antalKopi = 0;
 var timerKopi;
+var antalFoto = 0;
+var erDerKlikketPaaAlleFotoFlag = false;
 $(window).on("load", start);
 
 function start() {
@@ -13,6 +15,8 @@ function start() {
     $("#slet_knap_container").hide();
     $("#retry_knap_btn").hide();
     $("#pige_scene").hide();
+    $("#foto_slettes_scene").hide();
+
 
 
     $(".start_knap_btn").on("click", startHistorie);
@@ -116,14 +120,43 @@ function pigeTwo() {
     $("pige_container").off("animationend", pigeTwo);
 }
 
+
+/********** Ny scene start - slet foto *********/
+
 function sletningAfBillede() {
     console.log("sletningAfBillede");
     $(".slet_knap_btn").off("click", sletningAfBillede);
 
     $("#scene").hide();
-    $("#del_scene").show();
+    $("#foto_slettes_scene").show();
+    $(".foto").addClass("puls");
 
+    $(".foto").on("click", klikPaaFoto);
 }
+
+function klikPaaFoto() {
+    console.log("klikPaaFoto");
+
+    $(this).off("click", klikPaaFoto);
+    $(this).hide();
+    antalFoto++;
+
+    if (antalFoto >= 20) {
+        erDerKlikketPaaAlleFotoFlag = true;
+        $(".foto").off("click", klikPaaFoto);
+
+        $(".foto").removeClass("puls");
+        slutside();
+    }
+    console.log("erDerKlikketPaaAlleFotoFlag er lig med " + erDerKlikketPaaAlleFotoFlag);
+}
+
+
+function slutside() {
+    console.log("slutside");
+}
+
+
 
 
 /* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */

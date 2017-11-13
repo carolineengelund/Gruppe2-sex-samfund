@@ -302,6 +302,139 @@ body {
     }
 }
 
+/**************** foto_slettes_scene ************/
+
+#foto_slettes_scene {
+    background-image: url(img/by_billede.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 51vw;
+    position: relative;
+}
+
+.foto {
+    background-image: url(img/mobil_mednogenbillede.png);
+    background-size: cover;
+    width: 11.5vw;
+    height: 23vw;
+    transform: scale(0.7);
+    position: absolute;
+
+}
+
+.pos1 {
+    left: 80%;
+    top: 42%;
+}
+
+.pos2 {
+    left: 38%;
+    top: 45%;
+}
+
+.pos3 {
+    left: 12%;
+    top: 50%;
+}
+
+.pos4 {
+    left: 75%;
+    top: 5%;
+}
+
+.pos5 {
+    left: 47%;
+    top: 19%;
+}
+
+.pos6 {
+    left: 8%;
+    top: 11%;
+}
+
+.pos7 {
+    left: 69%;
+    top: 55%;
+}
+
+.pos8 {
+    left: 50%;
+    top: 61%;
+}
+
+.pos9 {
+    left: 0%;
+    top: 60%;
+}
+
+.pos10 {
+    left: 89%;
+    top: 7%;
+}
+
+.pos11 {
+    left: 13%;
+    top: 1%;
+}
+
+.pos12 {
+    left: 21%;
+    top: 50%;
+}
+
+.pos13 {
+    left: 65%;
+    top: 5%;
+}
+
+.pos14 {
+    left: 37%;
+    top: 19%;
+}
+
+.pos15 {
+    left: 22%;
+    top: 11%;
+}
+
+.pos16 {
+    left: 69%;
+    top: 10%;
+}
+
+.pos17 {
+    left: 67%;
+    top: 60%;
+}
+
+.pos18 {
+    left: 0%;
+    top: 10%;
+}
+
+.pos19 {
+    left: 0%;
+    top: 20%;
+}
+
+.pos20 {
+    left: 0%;
+    top: 30%;
+}
+
+.puls {
+    animation: puls_kf 0.5s infinite alternate linear;
+}
+
+@keyframes puls_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
 /********************* SLUT SIDER *****************/
 
 #slut_tekst_container {
