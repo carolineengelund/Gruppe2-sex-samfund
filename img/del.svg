@@ -1,26 +1,41 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="530" height="552.39" viewBox="0 0 530 552.39">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="738" height="711.11" viewBox="0 0 738 711.11">
   <defs>
     <style>
-      .cls-1 {
-        fill: #1e2431;
+      .cls-1, .cls-4 {
+        fill: none;
       }
 
       .cls-2 {
-        fill: #f3932d;
+        clip-path: url(#clip-path);
       }
 
       .cls-3 {
-        font-size: 120px;
-        fill: #f0f3f7;
+        fill: #1e2331;
+      }
+
+      .cls-4 {
+        stroke: #1e2331;
+      }
+
+      .cls-5 {
+        fill: #f3932d;
+      }
+
+      .cls-6 {
+        font-size: 170px;
+        fill: #fff;
         font-family: Renner-it-Medium, Renner*;
       }
     </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="27.56" y="19.05" width="697" height="673.87"/>
+    </clipPath>
   </defs>
-  <title>knapdel</title>
-  <g>
-    <path class="cls-1" d="M265.5,530.33A257,257,0,0,1,83.77,91.6,257,257,0,0,1,447.23,455.05,255.33,255.33,0,0,1,265.5,530.33Z"/>
-    <path d="M265.5,16.83a256.57,256.57,0,0,1,99.84,492.84A256.57,256.57,0,0,1,165.66,37,255,255,0,0,1,265.5,16.83m0-1C123.29,15.83,8,131.11,8,273.33s115.29,257.5,257.5,257.5S523,415.54,523,273.33,407.71,15.83,265.5,15.83Z"/>
+  <title>del</title>
+  <g class="cls-2">
+    <path class="cls-3" d="M376.06,692c189.16,0,342.51-149.58,342.51-334.1S565.22,23.77,376.06,23.77,33.54,173.36,33.54,357.88,186.89,692,376.06,692"/>
+    <ellipse class="cls-4" cx="376.06" cy="357.88" rx="342.52" ry="334.1"/>
   </g>
-  <path class="cls-2" d="M89,297.83a116.39,116.39,0,0,1,27.05-18.09,107.16,107.16,0,0,1,56.39-10l.19,21.63L202,260.74l-30.07-34L171.82,247a67.34,67.34,0,0,0-42.63,5.44C102.78,265.19,91.62,291.22,89,297.83Z"/>
-  <text class="cls-3" transform="translate(234.57 306.12)">DEL</text>
+  <path class="cls-5" d="M78.56,422.6A256.2,256.2,0,0,1,136.73,389,262.29,262.29,0,0,1,258,370.41l.41,40.24,63.16-57-64.67-63.3L256.65,328A165.3,165.3,0,0,0,165,338.11C108.18,361.91,84.19,410.32,78.56,422.6Z"/>
+  <text class="cls-6" transform="translate(353.11 408.71)">DEL</text>
 </svg>
