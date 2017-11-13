@@ -11,6 +11,9 @@ function start() {
     $("#fugl_sprite").hide();
     $("#del_knap_container").hide();
     $("#slet_knap_container").hide();
+    $("#retry_knap_btn").hide();
+    $("#pige_scene").hide();
+
 
     $(".start_knap_btn").on("click", startHistorie);
 }
@@ -65,14 +68,15 @@ function valg() {
     $(".slet_knap_btn").on("click", sletningAfBillede);
 
 }
-
 /******************************NY SCENE START********************************/
 
 function delingAfBillede() {
     console.log("delingAfBillede");
     $(".del_knap_btn").off("click", delingAfBillede);
 
+    $("#scene").hide();
     $("#del_scene").show();
+
 
     timerKopi = setInterval(kopier, 500);
 }
@@ -89,13 +93,65 @@ function kopier() {
         clearInterval(timerKopi);
         /* jeres nye function */
     }
+
+
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
 }
 
-function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+
+function pigeOne() {
+    console.log("pigeOne");
+    $("pige_container").off("animationend", pigeOne);
+    $("#pige_scene").show();
+
+    $("#pige_sprite").addClass("pige_one_sprite");
+
+    $("pige_container").on("animationend", pigeTwo);
+}
+
+function pigeTwo() {
+    console.log("pigeTwo");
+    $("pige_container").off("animationend", pigeTwo);
 }
 
 function sletningAfBillede() {
     console.log("sletningAfBillede");
     $(".slet_knap_btn").off("click", sletningAfBillede);
+
+    $("#scene").hide();
+    $("#del_scene").show();
+
 }
+
+
+/* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */
+
+//$("#del_knap_container").on("animationend", slutTekst);
+//setTimeout(saaErTidenGaaet, 5000);
+
+//function saaErTidenGaaet() {
+//    console.log("saaErTidenGaaet");
+//    $("#del_knap_container").off("animationend", saaErTidenGaaet);
+//
+//    $("#scene").hide();
+//    $("#del_scene").hide();
+//
+//    $("#slutside").show();
+//
+//}
+
+
+//
+//function slutTekst() {
+//    console.log("slutTekst");
+//    $("#del_knap_container").off("animationend", slutTekst);
+//
+//    $("#scene").hide();
+//    $("#del_scene").hide();
+//
+//    $("#slutside").show();
+//
+//
+//}

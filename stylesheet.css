@@ -183,7 +183,6 @@ body {
 
 #del_container {
     position: absolute;
-    background-image: url(img/mobil_mednogenbillede.png);
     top: 50 %;
     left: 35 %;
 }
@@ -193,12 +192,56 @@ body {
 }
 
 #del_sprite {
-    width: 30 vw;
-    height: 30 vw;
+    width: 11.5vw;
+    height: 23vw;
+    background-size: cover;
+    transform: scale(0.7);
 }
 
+.phone {
+    background-image: url(img/mobil_mednogenbillede.png);
+}
 
 /********************* DELING AF FOTO SLUT ****************/
+
+/*********************  PIGE ****************/
+
+#pige_scene {
+    position: relative;
+    background-image: url();
+    background-size: cover;
+    width: 100vw;
+    height: 51vw;
+}
+
+/********************* CONTAINER ********************/
+
+#pige_container {
+    position: absolute;
+}
+
+/********************* PIGE SPRITE *****************/
+
+#pige_sprite {
+    position: relative;
+    width: 45vw;
+    height: 40vw;
+    background-size: 88% 90%;
+}
+
+.pige_one_sprite {
+    background-image: url(pige1.jpg);
+}
+
+.pige_two_sprite {
+    background-image: url(pige2.jpg);
+}
+
+.pige_three_sprite {
+    background-image: url(pige3.jpg);
+}
+
+/********************* PIGE SLUT *****************/
 
 /******************FUGL*****************/
 
@@ -257,4 +300,58 @@ body {
     100% {
         background-position: -600% 0%;
     }
+}
+
+/********************* SLUT SIDER *****************/
+
+#slut_tekst_container {
+    position: relative;
+
+}
+
+#godt_goet_tekst {
+    background-image: url(img/thumbsup.png);
+    background-size: cover;
+    width: 100vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#timer_billede {
+    background-image: url(img/timer_billede.png);
+    background-size: cover;
+    width: 100vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#slutside {
+    background-image: url(img/slutside.png);
+    background-size: cover;
+    width: 100vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.retry_knap_btn {
+    width: 25vw;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    background-color: #F4912D;
+    top: 60%;
+    left: 15%;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #ffffff;
+    font-size: 8vw;
+    cursor: pointer;
 }
