@@ -180,6 +180,7 @@ body {
 
 #del_container {
     position: absolute;
+    background-image: url(img/mobil_mednogenbillede.png);
     top: 50 %;
     left: 35 %;
 }
