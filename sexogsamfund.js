@@ -20,6 +20,7 @@ function startHistorie() {
     $(".start_knap_btn").off("click", startHistorie);
 
     $("#start").hide();
+    $("#del_scene").hide();
     $("#baggrund").show();
     $("#peter_sprite").show();
     $("#fugl_sprite").show();
@@ -68,10 +69,14 @@ function valg() {
 
 }
 
+/******************************NY SCENE START********************************/
 
 function delingAfBillede() {
     console.log("delingAfBillede");
     $(".del_knap_btn").off("click", delingAfBillede);
+
+    $("#del_scene").show();
+
 
     timerKopi = setInterval(kopier, 500);
 }
