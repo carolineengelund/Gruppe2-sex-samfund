@@ -34,8 +34,9 @@ body {
     top: 60%;
     left: 15%;
     font-family: 'Frank Ruhl Libre', serif;
-    color: #202532;
+    color: #ffffff;
     font-size: 8vw;
+    cursor: pointer;
 }
 
 /********************* PETER ************************/
@@ -132,6 +133,38 @@ body {
 }
 
 /********************* PETER SLUT ****************/
+
+/********************* DELING AF FOTO ****************/
+
+del_scene {
+    position: relative;
+    background-image: url(img/by_billede.jpg);
+    background-size: cover;
+    width: 100 vw;
+    height: 51 vw;
+
+}
+
+#del_container {
+    position: absolute;
+    top: 50 %;
+    left: 35 %;
+}
+
+.del_container_kopi {
+    position: absolute;
+}
+
+#del_sprite {
+    width: 30 vw;
+    height: 30 vw;
+}
+
+.phone {
+    background-image: url(img/mobil_mednogenbillede.png);
+}
+
+/********************* DELING AF FOTO SLUT ****************/
 
 /******************FUGL*****************/
 
