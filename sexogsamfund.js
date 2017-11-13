@@ -6,9 +6,9 @@ function start() {
     console.log("start");
     $("#start").show();
     $("#baggrund").hide();
+    $("#del_scene").hide();
     $("#peter_sprite").hide();
     $("#fugl_sprite").hide();
-    $("#sky").hide();
     $("#del_knap_container").hide();
     $("#slet_knap_container").hide();
 
@@ -20,11 +20,9 @@ function startHistorie() {
     $(".start_knap_btn").off("click", startHistorie);
 
     $("#start").hide();
-    $("#del_scene").hide();
     $("#baggrund").show();
     $("#peter_sprite").show();
     $("#fugl_sprite").show();
-    $("#sky").show();
 
     $("#peter_container").addClass("peter_walk_ind");
     $("#peter_sprite").addClass("peter_walkcycle");
@@ -52,7 +50,6 @@ function peterFremad() {
     $("#peter_sprite").removeClass("peter_vinker_cycle");
     $("#peter_sprite").addClass("peter_fremad_cycle");
 
-
     $("#peter_sprite").on("animationend", valg);
 }
 
@@ -76,7 +73,6 @@ function delingAfBillede() {
     $(".del_knap_btn").off("click", delingAfBillede);
 
     $("#del_scene").show();
-
 
     timerKopi = setInterval(kopier, 500);
 }
@@ -102,5 +98,4 @@ function randomIntFromInterval(min, max) {
 function sletningAfBillede() {
     console.log("sletningAfBillede");
     $(".slet_knap_btn").off("click", sletningAfBillede);
-
 }
