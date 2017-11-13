@@ -204,7 +204,6 @@ body {
 #fugl_container {
     position: absolute;
     animation-timing-function: linear;
-
     margin-top: 13%;
 }
 
@@ -219,13 +218,12 @@ body {
 
 @keyframes fugl_walk_ind_kf {
     0% {
-        top: 2%;
+        top: -26%;
         left: -100%;
     }
 
-
     100% {
-        top: 2%;
+        top: -26%;
         left: 100%;
     }
 }
@@ -259,33 +257,3 @@ body {
         background-position: -600% 0%;
     }
 }
-
-/****************SKY******************************/
-
-#sky {
-    width: 16%;
-    height: 16%;
-    background-image: url(img/sky_ss.svg);
-    background-size: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 1%;
-    left: 0%;
-    /*opacity .5;*/
-    background-repeat: no-repeat;
-    animation-name: sky;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: 8s;
-    animation-delay: 1s;
-}
-
-@keyframes sky {
-    0% {
-        margin-left: -1000px;
-    }
-
-    100% {
-        margin-left: 100%;
-    }
