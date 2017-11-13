@@ -82,7 +82,7 @@ body {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: steps(8);
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 @keyframes peter_walkcycle_kf {
