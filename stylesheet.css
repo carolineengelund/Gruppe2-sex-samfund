@@ -138,9 +138,12 @@ body {
 
 #del_knap_container {
     position: relative;
+    background-size: cover;
     background-image: url(img/del.svg);
-    width: 5vw;
-    height: 5vw;
+    width: 70vw;
+    height: 70vw;
+    left: 40%;
+    top: 12.5%;
 }
 
 .del_knap_btn {
@@ -151,9 +154,12 @@ body {
 
 #slet_knap_container {
     position: relative;
+    background-size: cover;
     background-image: url(img/slet.svg);
-    width: 5vw;
-    height: 5vw;
+    width: 70vw;
+    height: 70vw;
+    left: 55%;
+    top: -125%;
 }
 
 .slet_knap_btn {

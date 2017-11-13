@@ -51,11 +51,21 @@ function peterFremad() {
     $("#peter_sprite").removeClass("peter_vinker_cycle");
     $("#peter_sprite").addClass("peter_fremad_cycle");
 
+
+    $("#peter_sprite").on("animationend", valg);
+}
+
+
+function valg() {
+    console.log("valg");
+    $("#peter_sprite").off("animationend", valg);
+
     $("#del_knap_container").show();
     $("#slet_knap_container").show();
 
     $(".del_knap_btn").on("click", delingAfBillede);
     $(".slet_knap_btn").on("click", sletningAfBillede);
+
 }
 
 
