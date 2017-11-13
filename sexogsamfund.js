@@ -9,6 +9,8 @@ function start() {
     $("#peter_sprite").hide();
     $("#fugl_sprite").hide();
     $("#sky").hide();
+    $("#del_knap_container").hide();
+    $("#slet_knap_container").hide();
 
     $(".start_knap_btn").on("click", startHistorie);
 }
@@ -49,6 +51,8 @@ function peterFremad() {
     $("#peter_sprite").removeClass("peter_vinker_cycle");
     $("#peter_sprite").addClass("peter_fremad_cycle");
 
+    $(".del_knap_btn").show();
+    $(".slet_knap_btn").show();
 
     $(".del_knap_btn").on("click", delingAfBillede);
     $(".slet_knap_btn").on("click", SletningAfBillede);

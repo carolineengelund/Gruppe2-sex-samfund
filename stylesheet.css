@@ -134,9 +134,28 @@ body {
 
 /********************* PETER SLUT ****************/
 
+/***************** del knap ***************/
+
+.del_knap_container {
+    position: absolute;
+    background-image: url(img/del.svg);
+    transform: scale(0.2);
+}
+
+
+/***************** slet knap ***************/
+
+.slet_knap_container {
+    position: absolute;
+    background-image: url(img/slet.svg);
+    transform: scale(0.2);
+}
+
+
+
 /********************* DELING AF FOTO ****************/
 
-del_scene {
+.del_scene {
     position: relative;
     background-image: url(img/by_billede.jpg);
     background-size: cover;
