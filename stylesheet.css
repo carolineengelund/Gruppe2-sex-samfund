@@ -136,21 +136,29 @@ body {
 
 /***************** del knap ***************/
 
-.del_knap_container {
-    position: absolute;
+#del_knap_container {
+    position: relative;
     background-image: url(img/del.svg);
-    transform: scale(0.2);
+    width: 5vw;
+    height: 5vw;
 }
 
+.del_knap_btn {
+    transform: scale(0.2);
+}
 
 /***************** slet knap ***************/
 
-.slet_knap_container {
-    position: absolute;
+#slet_knap_container {
+    position: relative;
     background-image: url(img/slet.svg);
-    transform: scale(0.2);
+    width: 5vw;
+    height: 5vw;
 }
 
+.slet_knap_btn {
+    transform: scale(0.2);
+}
 
 
 /********************* DELING AF FOTO ****************/
