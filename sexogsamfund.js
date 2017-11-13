@@ -28,12 +28,12 @@ function startHistorie() {
     $("#fugl_container").addClass("fugl_walk_ind");
     $("#fugl_sprite").addClass("fugl_walkcycle");
 
-    $("#peter_container").on("animationend", peterVinker);
+    $("#peter_sprite").on("animationend", peterVinker);
 }
 
 function peterVinker() {
     console.log("peterVinker");
-    $("#peter_container").off("animationend", peterVinker);
+    $("#peter_sprite").off("animationend", peterVinker);
 
     $("#peter_container").removeClass("peter_walk_ind");
     $("#peter_sprite").removeClass("peter_walkcycle");
@@ -43,7 +43,7 @@ function peterVinker() {
 }
 
 function peterFremad() {
-    console.log("peterVinker");
+    console.log("peterFremad");
     $("#peter_sprite").off("animationend", peterFremad);
 
     $("#peter_sprite").removeClass("peter_vinker_cycle");
@@ -56,32 +56,32 @@ function peterFremad() {
 
 
 
-
-
-
-
-var antalKopi = 0;
-var timerKopi;
-$(".box_btn").on("click", boxBtnHandler);
-
-function boxBtnHandler() {
-    timerKopi = setInterval(kopier, 500);
-}
-
-function kopier() {
-    console.log("kopier");
-    antalKopi++;
-    if (antalKopi <= 20) {
-        $(".box_container").clone().removeClass("box_container").addClass("box_container_kopi").appendTo("#scene").css({
-            "left": randomIntFromInterval(1, 90) + "%",
-            "top": randomIntFromInterval(1, 90) + "%"
-        });
-    } else {
-        clearInterval(timerKopi);
-        /* jeres nye function */
-    }
-}
-
-function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
+//
+//
+//
+//
+//var antalKopi = 0;
+//var timerKopi;
+//$(".del_btn").on("click", delBtnHandler);
+//
+//function delBtnHandler() {
+//    timerKopi = setInterval(kopier, 500);
+//}
+//
+//function kopier() {
+//    console.log("kopier");
+//    antalKopi++;
+//    if (antalKopi <= 20) {
+//        $(".box_container").clone().removeClass("box_container").addClass("box_container_kopi").appendTo("#scene").css({
+//            "left": randomIntFromInterval(1, 90) + "%",
+//            "top": randomIntFromInterval(1, 90) + "%"
+//        });
+//    } else {
+//        clearInterval(timerKopi);
+//        /* jeres nye function */
+//    }
+//}
+//
+//function randomIntFromInterval(min, max) {
+//    return Math.floor(Math.random() * (max - min + 1) + min);
+//}
