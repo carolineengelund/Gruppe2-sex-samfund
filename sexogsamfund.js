@@ -30,7 +30,6 @@ function startHistorie() {
     $("#peter_container").on("animationend", peterVinker);
 }
 
-
 function peterVinker() {
     console.log("peterVinker");
     $("#peter_container").off("animationend", peterVinker);
@@ -39,4 +38,20 @@ function peterVinker() {
     $("#peter_sprite").removeClass("peter_walkcycle");
 
     $("#peter_sprite").addClass("peter_vinker_cycle");
+
+    $("#peter_sprite").on("animationend", peterFremad);
+
+
+}
+
+
+function peterFremad() {
+    console.log("peterVinker");
+    $("#peter_sprite").off("animationend", peterFremad);
+
+    $("#peter_sprite").removeClass("peter_vinker_cycle");
+    $("#peter_sprite").addClass("peter_fremad_cycle");
+
+    $("#peter_sprite").on("animationend", byTelefon);
+
 }
