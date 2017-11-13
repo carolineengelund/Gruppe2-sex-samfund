@@ -74,7 +74,7 @@ body {
     height: 50vw;
     background-size: 800% 300%;
     position: relative;
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 
 .peter_walkcycle {
@@ -140,10 +140,11 @@ body {
     position: relative;
     background-size: cover;
     background-image: url(img/del.svg);
-    width: 70vw;
+    width: 71vw;
     height: 70vw;
     left: 40%;
     top: 12.5%;
+    cursor: pointer;
 }
 
 .del_knap_btn {
@@ -156,10 +157,11 @@ body {
     position: relative;
     background-size: cover;
     background-image: url(img/slet.svg);
-    width: 70vw;
+    width: 71vw;
     height: 70vw;
     left: 55%;
     top: -125%;
+    cursor: pointer;
 }
 
 .slet_knap_btn {
@@ -173,8 +175,9 @@ body {
     position: relative;
     background-image: url(img/by_billede.jpg);
     background-size: cover;
-    width: 100 vw;
-    height: 51 vw;
+    width: 100vw;
+    height: 51vw;
+    z-index: 2;
 
 }
 
@@ -193,9 +196,6 @@ body {
     height: 30 vw;
 }
 
-.phone {
-    background-image: url(img/mobil_mednogenbillede.png);
-}
 
 /********************* DELING AF FOTO SLUT ****************/
 
