@@ -14,6 +14,7 @@ function start() {
     $("#del_knap_container").hide();
     $("#slet_knap_container").hide();
     $(".retry_knap_btn").hide();
+    $("#slutside").hide();
     $("#pige_scene").hide();
     $("#foto_slettes_scene").hide();
 
@@ -73,7 +74,7 @@ function valg() {
 
     $(".slet_knap_btn").on("click", sletningAfBillede);
     $("#slet_knap_container").addClass("puls_knap_slet");
-
+    setTimeout(timerBillede, 1000);
 }
 /****************************** SCENE OVER BYEN START********************************/
 
@@ -117,50 +118,26 @@ function pigeOne() {
     $("#del_scene").hide();
     $("#pige_scene").show();
     $("#pige1_container").addClass(".pige1_sprite");
-    $("#pige2_container").on("animationend", pigeTwo);
+    $("#pige2_container").hide();
+    $("#pige3_container").hide();
+    setTimeout(pigeTwo, 1000);
+
 }
 
 function pigeTwo() {
     console.log("pigeTwo");
-    $("#pige2_container").off("animationend", pigeTwo);
-    $("#pige2_container").addClass(".pige2_sprite");
-    $("#pige2_container").on("animationend", pigeThree);
+
+
+    $("#pige2_container").show();
+    setTimeout(pigeThree, 1000);
 }
 
 function pigeThree() {
     console.log("pigeThree");
-    $("#pige2_container").off("animationend", pigeThree);
-    $("#pige3_container").addClass(".pige3_sprite");
 
-    $("#pige3_container").on("animationend", slutTekst);
+    $("#pige3_container").show();
+    setTimeout(slutTekst, 1000);
 }
-
-
-
-
-
-
-
-/* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */
-
-//$("#del_knap_container").on("animationend", slutTekst);
-//setTimeout(saaErTidenGaaet, 5000);
-
-//function saaErTidenGaaet() {
-//    console.log("saaErTidenGaaet");
-//    $("#del_knap_container").off("animationend", saaErTidenGaaet);
-//
-//    $("#scene").hide();
-//    $("#del_scene").hide();
-//
-//    $("#slutside").show();
-//
-//}
-
-
-
-
-
 
 
 /********** Ny scene start - slet foto *********/
@@ -172,6 +149,7 @@ function sletningAfBillede() {
 
 
     $("#scene").hide();
+
 
     $("#foto_slettes_scene").show();
     $(".foto").addClass("puls");
@@ -200,9 +178,18 @@ function klikPaaFoto() {
 
 function slutTekst() {
     console.log("slutTekst");
-    $("#del_knap_container").off("animationend", slutTekst);
 
     $("#pige_scene").hide();
+    $("#del_scene").hide();
+
     $("#slutside").show();
     $(".retry_knap_btn").show();
+    $(".retry_knap_btn").on("click", start);
+
+}
+
+function timerBillede() {
+    console.log("timerBillede");
+    $("#foto_slettes_scene").hide();
+    $(".timer_billede").show();
 }
