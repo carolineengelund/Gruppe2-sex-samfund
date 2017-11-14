@@ -213,7 +213,7 @@ body {
     position: absolute;
     background-size: cover;
     background-image: url(img/slet.svg);
-    width: 14vw;
+    width: 14.5vw;
     height: 14vw;
     left: 83%;
     top: 70%;
@@ -224,7 +224,6 @@ body {
     transform: scale(0.2);
 }
 
-
 /********************* DELING AF FOTO ****************/
 
 #del_scene {
@@ -233,8 +232,8 @@ body {
     background-size: cover;
     width: 100vw;
     height: 51vw;
-    z-index: 2;
-
+/*    z-index: 2;
+    */
 }
 
 #del_container {
@@ -283,7 +282,7 @@ body {
     width: 25vw;
     height: 25vw;
     top: 3%;
-    left: 33%;
+    left: -30%;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -300,14 +299,12 @@ body {
     background-size: cover;
     width: 25vw;
     height: 25vw;
-    top: -17%;
-    left: -30%;
+    top: -20%;
+    left: 2%;
     margin: auto;
     position: absolute;
     overflow: hidden;
-    background-image: url(img/pige2.jpg);
-
-
+    background-image: url(img/pige2.jpg)
 }
 
 #pige3_container {
@@ -319,8 +316,8 @@ body {
     background-size: cover;
     width: 25vw;
     height: 25vw;
-    top: -92%;
-    left: 2%;
+    top: -50%;
+    left: 33%;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -523,12 +520,7 @@ body {
 
 /********************* SLUT SIDER *****************/
 
-#slut_tekst_container {
-    position: relative;
-
-}
-
-.godt_goet_tekst {
+#godt_goet_tekst {
     background-image: url(img/thumbsup.png);
     background-size: cover;
     width: 100vw;
