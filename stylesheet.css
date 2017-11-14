@@ -334,7 +334,7 @@ body {
 #fugl_container {
     position: absolute;
     animation-timing-function: linear;
-    margin-top: 13%;
+    margin-top: 11%;
 }
 
 .fugl_walk_ind {
@@ -343,7 +343,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-delay: 0.1s;
-    transform: scale(0.8)
+    transform: scale(0.6)
 }
 
 @keyframes fugl_walk_ind_kf {
