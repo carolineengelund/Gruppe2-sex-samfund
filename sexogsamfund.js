@@ -17,8 +17,7 @@ function start() {
     $("#slutside").hide();
     $("#pige_scene").hide();
     $("#foto_slettes_scene").hide();
-
-
+    $("#godt_goet_tekst").hide();
 
     $(".start_knap_btn").on("click", startHistorie);
 }
@@ -120,7 +119,7 @@ function pigeOne() {
     $("#pige1_container").addClass(".pige1_sprite");
     $("#pige2_container").hide();
     $("#pige3_container").hide();
-    setTimeout(pigeTwo, 1000);
+    setTimeout(pigeTwo, 2000);
 
 }
 
@@ -129,14 +128,14 @@ function pigeTwo() {
 
 
     $("#pige2_container").show();
-    setTimeout(pigeThree, 1000);
+    setTimeout(pigeThree, 2000);
 }
 
 function pigeThree() {
     console.log("pigeThree");
 
     $("#pige3_container").show();
-    setTimeout(slutTekst, 1000);
+    setTimeout(delSlutTekst, 3000);
 }
 
 
@@ -170,22 +169,43 @@ function klikPaaFoto() {
         $(".foto").off("click", klikPaaFoto);
 
         $(".foto").removeClass("puls");
-        slutTekst();
+        godtValgt();
     }
     console.log("erDerKlikketPaaAlleFotoFlag er lig med " + erDerKlikketPaaAlleFotoFlag);
 }
 
-
-function slutTekst() {
-    console.log("slutTekst");
+function delSlutTekst() {
+    console.log("delSlutTekst");
 
     $("#pige_scene").hide();
     $("#del_scene").hide();
-
     $("#slutside").show();
     $(".retry_knap_btn").show();
     $(".retry_knap_btn").on("click", start);
+}
 
+function godtValgt() {
+    console.log("godtValgt");
+    $("#foto_slettes_scene").hide();
+    $("#godt_goet_tekst").show();
+    setTimeout(sletSlutTekst, 4000);
+}
+
+function sletSlutTekst() {
+    console.log("sletSlutTekst");
+
+    $("#godt_goet_tekst").hide();
+    $("#foto_slettes_scene").hide();
+
+    $("#slutside").show();
+    $(".retry_knap_btn").show();
+    $(".retry_knap_btn").on("click", igen);
+}
+
+function igen() {
+    console.log("igen");
+    $(".retry_knap_btn").off("click", igen);
+    location.reload();
 }
 
 function timerBillede() {
