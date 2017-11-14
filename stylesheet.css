@@ -177,8 +177,6 @@ body {
     }
 }
 
-
-
 .puls_knap_slet {
     animation-name: puls_knap_slet_kf;
     animation-duration: 1s;
@@ -272,58 +270,63 @@ body {
     background-size: cover;
     width: 100vw;
     height: 51vw;
-    background-color: aqua;
+    background-color: #202532;
 }
 
 /********************* CONTAINER ********************/
 
 #pige1_container {
     position: relative;
+    animation-duration: 2s;
 }
 
 .pige1_sprite {
     background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    top: 6%;
-    left: 10%;
+    width: 25vw;
+    height: 25vw;
+    top: 3%;
+    left: 33%;
     margin: auto;
     position: absolute;
     overflow: hidden;
     background-image: url(img/pige1.jpg);
+
 }
 
 #pige2_container {
     position: relative;
+    animation-duration: 2s;
 }
 
 .pige2_sprite {
     background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    top: 18%;
-    left: -15%;
+    width: 25vw;
+    height: 25vw;
+    top: -17%;
+    left: -30%;
     margin: auto;
     position: absolute;
     overflow: hidden;
     background-image: url(img/pige2.jpg);
+
+
 }
 
 #pige3_container {
     position: relative;
+    animation-duration: 2s;
 }
 
 .pige3_sprite {
     background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    top: -30%;
-    left: 25%;
+    width: 25vw;
+    height: 25vw;
+    top: -92%;
+    left: 2%;
     margin: auto;
     position: absolute;
     overflow: hidden;
     background-image: url(img/pige3.jpg);
-
 }
 
 /********************* PIGE SLUT *****************/
@@ -527,7 +530,7 @@ body {
 
 }
 
-#godt_goet_tekst {
+.godt_goet_tekst {
     background-image: url(img/thumbsup.png);
     background-size: cover;
     width: 100vw;
@@ -538,7 +541,7 @@ body {
 }
 
 
-#timer_billede {
+.timer_billede {
     background-image: url(img/timer_billede.png);
     background-size: cover;
     width: 100vw;
