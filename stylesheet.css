@@ -37,6 +37,7 @@ body {
     position: absolute;
     top: 15%;
     left: 50%;
+    width: 58vw;
     transform: scale(1.1);
 }
 
@@ -83,11 +84,11 @@ body {
 
 @keyframes peter_walk_ind_kf {
     0% {
-        top: -7%;
+        top: 0%;
         left: 100%;
     }
     100% {
-        top: -7%;
+        top: 0%;
         left: 10%;
     }
 }
@@ -126,10 +127,7 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: steps(4);
     animation-fill-mode: both;
-    /*
-    top: -7%;
-    left: 0%;
-*/
+
 }
 
 @keyframes peter_vinker_cycle_kf {
