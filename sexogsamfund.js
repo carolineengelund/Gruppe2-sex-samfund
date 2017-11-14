@@ -145,14 +145,12 @@ function sletningAfBillede() {
 
 
     $("#scene").hide();
-<<<<<<< HEAD
+
     $("#foto_slettes_scene").show();
     $(".foto").addClass("puls");
 
     $(".foto").on("click", klikPaaFoto);
-=======
-    $("#del_scene").show();
->>>>>>> origin/master
+
 }
 
 function klikPaaFoto() {
