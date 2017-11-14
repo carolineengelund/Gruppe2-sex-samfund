@@ -83,7 +83,7 @@ function delingAfBillede() {
     $("#scene").hide();
     $("#del_scene").show();
 
-    timerKopi = setInterval(kopier, 500);
+    timerKopi = setInterval(kopier, 200);
 }
 
 function kopier() {
