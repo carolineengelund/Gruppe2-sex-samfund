@@ -561,7 +561,7 @@ body {
 }
 
 .retry_knap_btn {
-    width: 25vw;
+    width: 20vw;
     margin: 0;
     padding: 5px;
     border: none;
@@ -571,6 +571,6 @@ body {
     left: 15%;
     font-family: "Renner";
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 6vw;
     cursor: pointer;
 }
