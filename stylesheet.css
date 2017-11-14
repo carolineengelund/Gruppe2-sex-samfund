@@ -2,6 +2,16 @@ body {
     margin: 0;
 }
 
+/************** Font ************/
+
+@font-face {
+    font-family: "Renner";
+    src: url("font/renner-bold.woff2") format("woff2"), url("font/renner-bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*****************SCENE *************/
 
 #scene {
@@ -24,6 +34,22 @@ body {
     overflow: hidden;
 } */
 
+#start h1 {
+    font-family: "Renner";
+    color: #F4912D;
+    left: 15%;
+    top: 8%;
+    font-size: 6vw;
+    position: absolute;
+}
+
+#start img {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: scale(1.1);
+}
+
 #start {
     background-color: #202532;
     width: 100vw;
@@ -42,9 +68,9 @@ body {
     background-color: #F4912D;
     top: 60%;
     left: 15%;
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: "Renner";
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 6vw;
     cursor: pointer;
 }
 
@@ -551,7 +577,7 @@ body {
     background-color: #F4912D;
     top: 60%;
     left: 15%;
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: "Renner";
     color: #ffffff;
     font-size: 8vw;
     cursor: pointer;
