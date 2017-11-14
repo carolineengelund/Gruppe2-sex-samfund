@@ -24,16 +24,6 @@ body {
 
 /********************* START SIDE ************************/
 
-/*#start {
-    background-image: url(img/startside.png);
-    background-size: cover;
-    width: 100vw;
-    height: 51vw;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-} */
-
 #start h1 {
     font-family: "Renner";
     color: #F4912D;
@@ -63,6 +53,7 @@ body {
     width: 25vw;
     margin: 0;
     padding: 5px;
+    padding-top: 10px;
     border: none;
     position: absolute;
     background-color: #F4912D;
@@ -80,7 +71,7 @@ body {
 
 #peter_container {
     position: absolute;
-    margin-top: 4%;
+    margin-top: 3.5%;
 }
 
 .peter_walk_ind {
@@ -206,13 +197,13 @@ body {
 /***************** del knap ***************/
 
 #del_knap_container {
-    position: relative;
+    position: absolute;
     background-size: cover;
     background-image: url(img/del.svg);
     width: 14vw;
     height: 14vw;
-    left: 79%;
-    top: 54.5%;
+    left: 69%;
+    top: 70%;
     cursor: pointer;
 }
 
@@ -223,13 +214,13 @@ body {
 /***************** slet knap ***************/
 
 #slet_knap_container {
-    position: relative;
+    position: absolute;
     background-size: cover;
     background-image: url(img/slet.svg);
     width: 14vw;
     height: 14vw;
-    left: 79%;
-    top: 58.5%;
+    left: 83%;
+    top: 70%;
     cursor: pointer;
 }
 
