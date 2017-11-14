@@ -13,7 +13,7 @@ function start() {
     $("#fugl_sprite").hide();
     $("#del_knap_container").hide();
     $("#slet_knap_container").hide();
-    $("#retry_knap_btn").hide();
+    $(".retry_knap_btn").hide();
     $("#pige_scene").hide();
     $("#foto_slettes_scene").hide();
 
@@ -108,32 +108,59 @@ function kopier() {
 
 function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-
 }
 
 /****************************** SCENE TIL PIGEN START********************************/
 
 function pigeOne() {
     console.log("pigeOne");
+    $("#del_scene").hide();
     $("#pige_scene").show();
-
-    $("#pige_sprite").addClass("pige_one_sprite");
-
-    $("pige_container").on("animationend", pigeTwo);
+    $("#pige1_container").addClass(".pige1_sprite");
+    $("#pige2_container").on("animationend", pigeTwo);
 }
 
 function pigeTwo() {
     console.log("pigeTwo");
-    $("pige_container").on("animationend", pigeTwo);
+    $("#pige2_container").off("animationend", pigeTwo);
+    $("#pige2_container").addClass(".pige2_sprite");
+    $("#pige2_container").on("animationend", pigeThree);
 }
-
 
 function pigeThree() {
     console.log("pigeThree");
-    $("pige_container").on("animationend", pigeThree);
-    $(".slet_knap_btn").on("click", sletningAfBillede);
+    $("#pige2_container").off("animationend", pigeThree);
+    $("#pige3_container").addClass(".pige3_sprite");
 
+    $("#pige3_container").on("animationend", slutTekst);
 }
+
+
+
+
+
+
+
+/* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */
+
+//$("#del_knap_container").on("animationend", slutTekst);
+//setTimeout(saaErTidenGaaet, 5000);
+
+//function saaErTidenGaaet() {
+//    console.log("saaErTidenGaaet");
+//    $("#del_knap_container").off("animationend", saaErTidenGaaet);
+//
+//    $("#scene").hide();
+//    $("#del_scene").hide();
+//
+//    $("#slutside").show();
+//
+//}
+
+
+
+
+
 
 
 /********** Ny scene start - slet foto *********/
@@ -165,47 +192,17 @@ function klikPaaFoto() {
         $(".foto").off("click", klikPaaFoto);
 
         $(".foto").removeClass("puls");
-        slutside();
+        slutTekst();
     }
     console.log("erDerKlikketPaaAlleFotoFlag er lig med " + erDerKlikketPaaAlleFotoFlag);
 }
 
 
-function slutside() {
-    console.log("slutside");
+function slutTekst() {
+    console.log("slutTekst");
+    $("#del_knap_container").off("animationend", slutTekst);
+
+    $("#pige_scene").hide();
+    $("#slutside").show();
+    $(".retry_knap_btn").show();
 }
-
-
-
-
-
-
-/* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */
-
-//$("#del_knap_container").on("animationend", slutTekst);
-//setTimeout(saaErTidenGaaet, 5000);
-
-//function saaErTidenGaaet() {
-//    console.log("saaErTidenGaaet");
-//    $("#del_knap_container").off("animationend", saaErTidenGaaet);
-//
-//    $("#scene").hide();
-//    $("#del_scene").hide();
-//
-//    $("#slutside").show();
-//
-//}
-
-
-//
-//function slutTekst() {
-//    console.log("slutTekst");
-//    $("#del_knap_container").off("animationend", slutTekst);
-//
-//    $("#scene").hide();
-//    $("#del_scene").hide();
-//
-//    $("#slutside").show();
-//
-//
-//}

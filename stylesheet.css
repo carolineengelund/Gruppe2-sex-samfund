@@ -244,38 +244,60 @@ body {
     position: relative;
     background-image: url();
     background-size: cover;
-    background-color: #ff99cc;
     width: 100vw;
     height: 51vw;
+    background-color: aqua;
 }
 
 /********************* CONTAINER ********************/
 
-#pige_container {
-    position: absolute;
-}
-
-/********************* PIGE SPRITE *****************/
-
-#pige_sprite {
-    background-size: cover;
-    width: 90vw;
-    height: 91vw;
-    margin: auto;
+#pige1_container {
     position: relative;
+}
+
+.pige1_sprite {
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    top: 6%;
+    left: 10%;
+    margin: auto;
+    position: absolute;
     overflow: hidden;
+    background-image: url(img/pige1.jpg);
 }
 
-.pige_one_sprite {
-    background-image: url(pige1.jpg);
+#pige2_container {
+    position: relative;
 }
 
-.pige_two_sprite {
-    background-image: url(pige2.jpg);
+.pige2_sprite {
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    top: 18%;
+    left: -15%;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(img/pige2.jpg);
 }
 
-.pige_three_sprite {
-    background-image: url(pige3.jpg);
+#pige3_container {
+    position: relative;
+}
+
+.pige3_sprite {
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    top: -30%;
+    left: 25%;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(img/pige3.jpg);
+
 }
 
 /********************* PIGE SLUT *****************/
@@ -465,10 +487,10 @@ body {
 
 @keyframes puls_kf {
     0% {
-        transform: scale(1);
+        transform: scale(0.4);
     }
     100% {
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
 }
 
@@ -516,7 +538,7 @@ body {
     margin: 0;
     padding: 5px;
     border: none;
-    position: absolute;
+    position: relative;
     background-color: #F4912D;
     top: 60%;
     left: 15%;
