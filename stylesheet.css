@@ -550,6 +550,7 @@ body {
     margin: auto;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .retry_knap_btn {

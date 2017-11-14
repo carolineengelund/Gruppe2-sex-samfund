@@ -83,7 +83,7 @@ function delingAfBillede() {
     $("#scene").hide();
     $("#del_scene").show();
 
-    timerKopi = setInterval(kopier, 200);
+    timerKopi = setInterval(kopier, 300);
 }
 
 function kopier() {
@@ -186,7 +186,7 @@ function sletSlutTekst() {
     $("#foto_slettes_scene").hide();
     $("#slutside").show();
     $(".retry_knap_btn").show();
-    $(".retry_knap_btn").on("click", igen);
+    $(".retry_knap_btn").on("click", provigen);
 }
 
 function provigen() {
