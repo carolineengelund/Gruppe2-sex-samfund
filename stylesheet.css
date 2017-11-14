@@ -14,9 +14,18 @@ body {
 
 /********************* START SIDE ************************/
 
-#start {
+/*#start {
     background-image: url(img/startside.png);
     background-size: cover;
+    width: 100vw;
+    height: 51vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+} */
+
+#start {
+    background-color: #202532;
     width: 100vw;
     height: 51vw;
     margin: auto;
