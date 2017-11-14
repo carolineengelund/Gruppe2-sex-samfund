@@ -65,14 +65,18 @@ function valg() {
     $("#slet_knap_container").show();
 
     $(".del_knap_btn").on("click", delingAfBillede);
+    $("#del_knap_container").addClass("puls_knap_del");
+
     $(".slet_knap_btn").on("click", sletningAfBillede);
+    $("#slet_knap_container").addClass("puls_knap_slet");
 
 }
-/******************************NY SCENE START********************************/
+/****************************** SCENE OVER BYEN START********************************/
 
 function delingAfBillede() {
     console.log("delingAfBillede");
     $(".del_knap_btn").off("click", delingAfBillede);
+    $("#del_knap_container").removeClass("puls_knap_del");
 
     $("#scene").hide();
     $("#del_scene").show();
@@ -87,23 +91,26 @@ function kopier() {
     if (antalKopi <= 20) {
         $(".del_container").clone().removeClass("del_container").addClass("del_container_kopi").appendTo("#del_scene").css({
             "left": randomIntFromInterval(1, 90) + "%",
-            "top": randomIntFromInterval(1, 90) + "%"
+            "top": randomIntFromInterval(1, 62) + "%"
         });
     } else {
         clearInterval(timerKopi);
         /* jeres nye function */
+        pigeOne();
     }
 
-
-    function randomIntFromInterval(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
 }
 
 
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+
+}
+
+/****************************** SCENE TIL PIGEN START********************************/
+
 function pigeOne() {
     console.log("pigeOne");
-    $("pige_container").off("animationend", pigeOne);
     $("#pige_scene").show();
 
     $("#pige_sprite").addClass("pige_one_sprite");
@@ -113,17 +120,28 @@ function pigeOne() {
 
 function pigeTwo() {
     console.log("pigeTwo");
-    $("pige_container").off("animationend", pigeTwo);
+    $("pige_container").on("animationend", pigeTwo);
+}
+
+
+function pigeThree() {
+    console.log("pigeThree");
+    $("pige_container").on("animationend", pigeThree);
+    $(".slet_knap_btn").on("click", sletningAfBillede);
+
 }
 
 function sletningAfBillede() {
     console.log("sletningAfBillede");
     $(".slet_knap_btn").off("click", sletningAfBillede);
+    $("#slet_knap_container").removeClass("puls_knap_slet");
+
 
     $("#scene").hide();
     $("#del_scene").show();
-
 }
+
+
 
 
 /* FORSØG PÅ LINK EFTER BILLEDER ER KOMMET FREM. */
