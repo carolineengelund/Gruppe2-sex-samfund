@@ -194,9 +194,3 @@ function provigen() {
     $(".retry_knap_btn").off("click", provigen);
     location.reload();
 }
-
-function timerBillede() {
-    console.log("timerBillede");
-    $("#foto_slettes_scene").hide();
-    $(".timer_billede").show();
-}
