@@ -588,16 +588,16 @@ body {
 }
 
 .retry_knap_btn {
-    background-image: url(img/cirkel.svg);
-    width: 18vw;
+    background-image: url(img/cirkel.png);
+    width: 16vw;
     margin: 0;
     background-size: cover;
-    padding: 28px;
-    padding-top: 25px;
-    padding-bottom: 29px;
+    padding: 36px;
+    padding-top: 22px;
+    padding-bottom: 55px;
     border: none;
     position: absolute;
-    top: 59%;
+    top: 57%;
     left: 72%;
     font-family: "Renner";
     color: #ffffff;
