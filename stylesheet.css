@@ -530,9 +530,7 @@ body {
     overflow: hidden;
 }
 
-
-.timer_billede {
-    background-image: url(img/timer_billede.png);
+#slutside {
     background-size: cover;
     width: 100vw;
     height: 51vw;
@@ -541,29 +539,67 @@ body {
     overflow: hidden;
 }
 
+/********************* SLUT SIDE DESIGN *****************/
 
-#slutside {
-    background-image: url(img/slutside.png);
-    background-size: cover;
+#slut {
+    background-color: #202532;
     width: 100vw;
     height: 51vw;
     margin: auto;
     position: relative;
     overflow: hidden;
+}
+
+#slut h1 {
+    font-family: "Renner";
+    color: #F4912D;
+    left: 2%;
+    top: -6%;
+    font-size: 6vw;
+    position: absolute;
+}
+
+#slut h2 {
+    font-family: "Renner";
+    color: #F4912D;
+    left: 7%;
+    top: 68%;
+    font-size: 4vw;
+    position: absolute;
+}
+
+#slut p {
+    font-family: "Renner";
+    color: #ffffff;
+    width: 59%;
+    left: 6%;
+    top: 14%;
+    font-size: 3.5vw;
+    position: absolute;
+}
+
+#slut img {
+    position: absolute;
+    top: 2%;
+    left: 76%;
+    width: 20%;
+    transform: scale(1.1);
 }
 
 .retry_knap_btn {
-    width: 20vw;
+    background-image: url(img/cirkel.svg);
+    width: 18vw;
     margin: 0;
-    padding: 5px;
-    position: relative;
-    border: 0;
-    background-color: #F4912D;
-    top: 76%;
-    left: 3%;
+    background-size: cover;
+    padding: 28px;
+    padding-top: 25px;
+    padding-bottom: 29px;
+    border: none;
+    position: absolute;
+    top: 59%;
+    left: 72%;
     font-family: "Renner";
     color: #ffffff;
-    font-size: 5vw;
+    font-size: 4.5vw;
     cursor: pointer;
-    z-index: 2;
 }

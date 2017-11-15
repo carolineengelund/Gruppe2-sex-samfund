@@ -83,7 +83,7 @@ function delingAfBillede() {
     $("#scene").hide();
     $("#del_scene").show();
 
-    timerKopi = setInterval(kopier, 500);
+    timerKopi = setInterval(kopier, 300);
 }
 
 function kopier() {
@@ -193,10 +193,4 @@ function provigen() {
     console.log("provigen");
     $(".retry_knap_btn").off("click", provigen);
     location.reload();
-}
-
-function timerBillede() {
-    console.log("timerBillede");
-    $("#foto_slettes_scene").hide();
-    $(".timer_billede").show();
 }
