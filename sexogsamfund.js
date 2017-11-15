@@ -63,7 +63,7 @@ function valg() {
     console.log("valg");
     $("#peter_sprite").off("animationend", valg);
     $("#delingafbillede")[0].play();
-    $("#delingafbillede")[0].volume = 0.5;
+    $("#delingafbillede")[0].volume = 0.8;
     $("#del_knap_container").show();
     $("#slet_knap_container").show();
 
@@ -78,6 +78,8 @@ function valg() {
 function delingAfBillede() {
     console.log("delingAfBillede");
     $(".del_knap_btn").off("click", delingAfBillede);
+    $("#delingafbillede")[0].pause();
+
     $("#del_knap_container").removeClass("puls_knap_del");
 
     $("#scene").hide();
@@ -151,6 +153,8 @@ function sletningAfBillede() {
 
 function klikPaaFoto() {
     console.log("klikPaaFoto");
+    $("#papirkurv")[0].play();
+    $("#papirkurv")[0].volume = 0.5;
     $(this).off("click", klikPaaFoto);
     $(this).hide();
     antalFoto++;
