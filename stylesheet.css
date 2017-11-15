@@ -195,7 +195,7 @@ body {
 #del_knap_container {
     position: absolute;
     background-size: cover;
-    background-image: url(img/del.svg);
+    background-image: url(img/del.png);
     width: 14.5vw;
     height: 14vw;
     left: 69%;
@@ -212,7 +212,7 @@ body {
 #slet_knap_container {
     position: absolute;
     background-size: cover;
-    background-image: url(img/slet.svg);
+    background-image: url(img/slet.png);
     width: 14.5vw;
     height: 14vw;
     left: 83%;
